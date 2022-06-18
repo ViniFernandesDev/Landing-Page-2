@@ -1,0 +1,57 @@
+@use '../1-base/main.scss';
+@use '../1-base/reset.scss';
+
+/*
+  ========================================
+  TITLES AND AFTER
+  ========================================
+*/
+
+.title40 {
+    font-size: reset.toRem(40);
+    color: main.$ColorOne;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.bar {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 4px;
+        width: 200px;
+    }
+
+    &.color1::after {
+        background: main.$ColorSeven;
+    }
+
+    &.color2::after {
+        background: main.$ColorMain;
+    }
+}
+
+/*******
+RESPONSIVE
+*******/
+
+/* LAPTOP - 1024px*/ 
+@include main.breakpoint(smashLaptop) {
+    .title40 {
+        font-size: reset.toRem(30);
+        padding-bottom: 20px;
+    }
+}
+
+
+/* TABLET - 600px*/ 
+@include main.breakpoint(smashTablet) {
+    .title40 {
+        font-size: reset.toRem(24);
+    }
+}

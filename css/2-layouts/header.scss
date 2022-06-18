@@ -6,3 +6,63 @@
   HEADER
   ========================================
 */
+
+header {
+  box-shadow: 0px -1px 8px 0px rgba(0,0,0,0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  background: #ffffff;
+  transition: 0.3s all;
+  
+  & .container {
+    height: 120px;
+    @include main.FlexBetCen;
+    transition: 0.3s all;
+
+    & .logo a {
+      display: block
+    }
+    
+    & .navigation {
+      @include main.FlexBetCen;
+      gap: 0 25px;
+
+      & nav ul {
+        @include main.FlexBetCen;
+
+        & li a {
+          font-size: reset.toRem(20);
+          color: main.$ColorMain;
+          padding: 10px 20px;
+
+          &:hover {
+            color: main.$ColorSix;
+          }
+        }
+      }
+    }
+  } //CONTAINER
+
+  &.fixed {
+    background: rgb(255 255 255 / 90%);
+
+    & .container {
+      height: 90px;
+
+      & .navigation {  
+        & nav ul {
+          & li a {
+            font-size: reset.toRem(18);
+          }
+        }
+
+        & .buttonType1 a {
+          font-size: reset.toRem(16);
+        }
+      }
+    }
+  }
+}
