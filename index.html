@@ -13,6 +13,8 @@
     <title>Landing Page 2</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/owl.theme.default.min.css">
+    <link rel="stylesheet" href="js/owl.carousel.min.css">
 
 </head>
 <body>
@@ -48,14 +50,230 @@
 </header>
 
 <main>
-	
+    <section class="banner">
+        <div id="secao"></div>
+    
+        <img src="img/banner.jpg" alt="Banner">
+    </section><!--banner-->
+    
+    <section class="contentMain" id="secao1">
+        <div class="container">
+        <main>
+        
+            <div class="display">
+                <div class="txt">
+                    <h1 class="title40 bar color1"><b>Lorem ipsum</b><br> 
+                    dolor sit amet</h1>
+    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pharetra enim erat, ac aliquam odio fringilla vitae. Pellentesque pellentesque, neque vitae elementum finibus, purus risus viverra tellus.</p>
+                </div><!--txt-->
+    
+                <div class="img">
+                    <img src="img/principal.jpg" alt="Banner">
+                </div><!--img-->
+            </div><!--display-->
+    
+        </main>
+        </div><!--container-->
+    </section><!--contentMain-->
+    
+    <section class="slideDepoimentos" id="secao2">
+        <div class="container">
+            <h2 class="title40 bar color2"><b>Quem acredita</b><br> Na nossa empresa</h2>
+        </div><!--container-->
+    
+        <div class="container container_slide">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <h3>Lorem ipsum</h3>
+                    <h4>Lorem ipsum</h4>
+    
+                    <img src="img/thumbDepoimentos.jpg" alt="Thumb depoimentos">
+                </div><!--item-->
+    
+                <div class="item">
+                    <h3>Lorem ipsum</h3>
+                    <h4>Lorem ipsum</h4>
+    
+                    <img src="img/thumbDepoimentos.jpg" alt="Thumb depoimentos">
+                </div><!--item-->
+    
+                <div class="item">
+                    <h3>Lorem ipsum</h3>
+                    <h4>Lorem ipsum</h4>
+    
+                    <img src="img/thumbDepoimentos.jpg" alt="Thumb depoimentos">
+                </div><!--item-->
+    
+                <div class="item">
+                    <h3>Lorem ipsum</h3>
+                    <h4>Lorem ipsum</h4>
+    
+                    <img src="img/thumbDepoimentos.jpg" alt="Thumb depoimentos">
+                </div><!--item-->
+            </div><!--owl-carousel-->
+    
+        </div><!--container-->
+    </section><!--slideDepoimentos-->
+    
+    <section class="callLocalization" id="secao3">
+        <div class="mapa">
+        <iframe title="Mapa Contato" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28395.27694175197!2d-51.532546274793816!3d-27.17485978439536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e3faab3e246e29%3A0x76930ccaad948e2a!2zSm9hw6dhYmEsIFND!5e0!3m2!1spt-BR!2sbr!4v1655580884912!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div><!--mapa-->
+    
+        <div class="container">
+    
+            <div class="content inputs">
+                <div class="txt">
+                    <h2 class="title40 bar color1"><b>Lorem ipsum</b><br> dolor sit amet</h2>
+    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pharetra enim erat, ac aliquam odio fringilla vitae. Pellentesque pellentesque, neque vitae elementum finibus, purus risus viverra tellus.</p>
+                </div><!--txt-->
+    
+                <div class="margin"><input type="text" name="nome" placeholder="Nome" required=""></div><!--margin-->
+                <div class="margin"><input type="text" name="email" placeholder="E-mail" required=""></div><!--margin-->
+                <div class="margin"><input type="text" name="telefone" class="mask-telefone" placeholder="Telefone" required=""></div><!--margin-->
+                <div class="margin"><textarea name="mensagem" style="height:190px;" placeholder="Mensagem" required=""></textarea></div><!--margin-->
+                
+                <input type="submit" name="Button" value="Enviar">
+            </div><!--content-->
+    
+        </div><!--container-->
+    </section><!--callLocalization-->
+    
+    <section class="newsletter">
+        <div class="container">
+    
+            <div class="display">
+                <h2 class="title40 bar color2"><b>Newsletter</b></h2>
+    
+                <div class="content inputs input_center">
+    
+                    <form name="contato" action="/newsletter" method="POST">  
+                        <div class="item"><input type="text" name="nome" placeholder="Nome" required=""></div>
+                        <div class="item"><input type="text" name="email" placeholder="E-mail" required=""></div>
+                        <div><input type="submit" name="Button" value="Cadastrar"></div>
+                    </form>
+    
+                </div><!--content-->
+            </div><!--display-->
+    
+        </div><!--container-->
+    </section><!--newsletter-->
 </main>
 
 <footer>
+    <div class="container">
+        
+        <div class="left">
+            <div class="item">
+                <a href="#"><img src="img/logo_footer.jpg" alt="Logo"></a>
+            </div><!--item-->
 
+            <div class="item">
+                <ul>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                </ul>
+            </div><!--item-->
+
+            <div class="item">
+                <nav>
+                    <ul>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">404</a></li>
+                    </ul>
+                </nav>
+            </div><!--item-->
+        </div><!--left-->
+
+        <div class="right">
+            <ul>
+                <li><a href="#"><img src="img/ico_face.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="img/ico_insta.png" alt="Instagram"></a></li>
+                <li><a href="#"><img src="img/ico_link.png" alt="Linkdin"></a></li>
+            </ul>
+
+            <div class="buttonType1">
+                <a href="#">Lorem Ipsum</a>
+            </div><!--buttonType1-->
+        </div><!--right-->
+
+    </div><!--container-->
+
+    <div class="developer">
+        Desenvolvido por <a href="#" target="_blank">#</a>
+    </div><!--developer-->
 </footer>
 
 <script src="js/jquery.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+
+<script>
+    $('.owl-carousel').owlCarousel({
+        center: true,
+        items:2,
+        loop:true,
+        nav:true,
+        margin:20,
+        responsive:{
+            900:{
+                items:4
+            },
+            600:{
+                items:3
+            }
+        }
+    });
+</script>
+
+<!--header fixa-->
+<script>
+    $(window).scroll(function () {
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop > 120) {
+            $('header').addClass('fixed');
+        } else {
+            $('header').removeClass('fixed');
+        }
+    });
+</script>
+
+<!-- MENU RESPONSIVO -->
+<script>
+    $('#toggle').click(function () {
+        $(this).toggleClass('active');
+        $('#overlay').toggleClass('open');
+    });
+
+    $(".overlay ul li a").click(function () {
+        $("#toggle").removeClass("active");
+        $("#overlay").removeClass("open");
+    })
+
+    $(document).ready(function() {
+        $('.menu').click(function() {
+            $(this).toggleClass("ativo");
+        });
+    });
+</script>
+
+<!-- HEADER SCROLL -->
+<script>
+$('.navigation a[href^="#"]').on('click', function(e) {
+	e.preventDefault();
+	var id = $(this).attr('href'),
+			targetOffset = $(id).offset().top;
+			
+	$('html, body').animate({ 
+		scrollTop: targetOffset - 100
+	}, 500);
+});
+</script>
+
+
 
 </body>
 </html>

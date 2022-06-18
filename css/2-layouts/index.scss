@@ -6,3 +6,159 @@
   INDEX
   ========================================
 */
+
+.banner {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.scroll {
+    position: absolute;
+    top: -80px;
+}
+
+/* CONTENT MAIN */
+
+.contentMain {
+    padding: 100px 0 70px 0;
+    position: relative;
+
+    & .display {
+        @include main.FlexCenCen;
+        gap: 0 140px;
+
+        & .txt {
+            width:520px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+            & h1 {
+                width: 100%;
+            }
+        }
+
+        & .img {
+          width:660px;
+        }
+    }
+}
+
+/* SLIDE DEPOIMENTOS */
+
+.slideDepoimentos {
+  position: relative;
+  padding-top: 40px;
+
+  & h2 {
+      padding-bottom: 40px;
+      margin-bottom: 50px;
+  }
+
+  & .owl-carousel {
+      display: flex;
+  }
+
+  & .item {
+      border: 1px solid main.$ColorMain;
+      border-radius: 10px;
+      padding: 0 0 18px 0;
+      min-height: 230px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: flex-end;
+
+      & h3,
+      & h4 {
+          width: 100%;
+          text-align: center;
+          font-weight: 900;
+      }
+
+      & h3 {
+          font-size: reset.toRem(23);
+          color: main.$ColorMain;  
+      }
+
+      & h4 {
+          font-size: reset.toRem(11);
+          color: main.$ColorOne;
+          margin-bottom: 10px;
+      }
+  }
+}
+
+/* LOCALIZATION */
+
+.callLocalization {
+  position: relative;
+  margin-top: 100px;
+  height: 900px;
+
+  & .mapa {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+  }
+
+  & .container {
+      display: flex;
+      justify-content: flex-end;
+      height: 900px;
+
+      & .content {
+          height: 900px;
+          width: 630px;
+          background: #ffffff;
+          position: relative;
+          z-index: 2;
+          padding: 80px 0px 0 100px;
+
+          & input[type="submit"] {
+              float: right;
+              background-image: url("../img/arrow_button.png");
+              background-position: left 40px center;
+              padding-left: 35px;
+          }
+      }
+  }
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+  padding: 120px 0;
+
+  & .display {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0 75px;
+
+      & h2 {
+          padding: 2px 0 15px 0; 
+      }
+
+      & .content {
+          & form {
+              display: flex;
+              gap: 0 22px;
+
+              & .item {
+                  width: 360px;
+              }
+
+              & input[type="submit"] {
+                  float: right;
+                  background-image: url("../img/arrow_button.png");
+                  background-position: left 32px center;
+                  padding-left: 35px;
+              }
+          }
+      }
+  }
+}

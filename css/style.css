@@ -217,11 +217,188 @@ header.fixed .container .navigation .buttonType1 a {
   FOOTER
   ========================================
 */
+footer {
+  padding: 125px 0 55px 0;
+  background: #4A4A4A;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+footer .container .left {
+  display: flex;
+  gap: 0 120px;
+}
+footer .container .left li {
+  margin-bottom: 30px;
+}
+footer .container .left li a {
+  font-size: 1.25rem;
+  color: #ffffff;
+  padding: 4px 20px;
+  font-weight: 600;
+  display: block;
+}
+footer .container .left li a:hover {
+  color: #78C3B6;
+}
+footer .container .right ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px 45px;
+  margin-bottom: 55px;
+}
+footer .container .right ul li a {
+  display: block;
+}
+footer .developer {
+  margin-top: 120px;
+  text-align: center;
+  color: #cfcfcf;
+  font-size: 0.625rem;
+}
+footer .developer a {
+  color: #ffffff;
+}
+
 /*
   ========================================
   INDEX
   ========================================
 */
+.banner {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.scroll {
+  position: absolute;
+  top: -80px;
+}
+
+/* CONTENT MAIN */
+.contentMain {
+  padding: 100px 0 70px 0;
+  position: relative;
+}
+.contentMain .display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 140px;
+}
+.contentMain .display .txt {
+  width: 520px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contentMain .display .txt h1 {
+  width: 100%;
+}
+.contentMain .display .img {
+  width: 660px;
+}
+
+/* SLIDE DEPOIMENTOS */
+.slideDepoimentos {
+  position: relative;
+  padding-top: 40px;
+}
+.slideDepoimentos h2 {
+  padding-bottom: 40px;
+  margin-bottom: 50px;
+}
+.slideDepoimentos .owl-carousel {
+  display: flex;
+}
+.slideDepoimentos .item {
+  border: 1px solid #6D68AD;
+  border-radius: 10px;
+  padding: 0 0 18px 0;
+  min-height: 230px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-end;
+}
+.slideDepoimentos .item h3, .slideDepoimentos .item h4 {
+  width: 100%;
+  text-align: center;
+  font-weight: 900;
+}
+.slideDepoimentos .item h3 {
+  font-size: 1.4375rem;
+  color: #6D68AD;
+}
+.slideDepoimentos .item h4 {
+  font-size: 0.6875rem;
+  color: #5C5C5C;
+  margin-bottom: 10px;
+}
+
+/* LOCALIZATION */
+.callLocalization {
+  position: relative;
+  margin-top: 100px;
+  height: 900px;
+}
+.callLocalization .mapa {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+.callLocalization .container {
+  display: flex;
+  justify-content: flex-end;
+  height: 900px;
+}
+.callLocalization .container .content {
+  height: 900px;
+  width: 630px;
+  background: #ffffff;
+  position: relative;
+  z-index: 2;
+  padding: 80px 0px 0 100px;
+}
+.callLocalization .container .content input[type=submit] {
+  float: right;
+  background-image: url("../img/arrow_button.png");
+  background-position: left 40px center;
+  padding-left: 35px;
+}
+
+/* NEWSLETTER */
+.newsletter {
+  padding: 120px 0;
+}
+.newsletter .display {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0 75px;
+}
+.newsletter .display h2 {
+  padding: 2px 0 15px 0;
+}
+.newsletter .display .content form {
+  display: flex;
+  gap: 0 22px;
+}
+.newsletter .display .content form .item {
+  width: 360px;
+}
+.newsletter .display .content form input[type=submit] {
+  float: right;
+  background-image: url("../img/arrow_button.png");
+  background-position: left 32px center;
+  padding-left: 35px;
+}
+
 /*
   ========================================
   INPUTS
