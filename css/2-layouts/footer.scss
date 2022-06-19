@@ -78,3 +78,94 @@ footer {
     }
   }
 }
+
+/*******
+RESPONSIVO
+*******/
+
+/* DESKTOP - 1200px*/ 
+@include main.breakpoint(smashDesktop) {
+  footer {
+    & .container {
+      & .left {
+        width: 80%;
+        gap: 0;
+
+        & .item {
+          width: 33%;
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      & .right {
+        width: 20%;
+        text-align: center;
+
+        & .buttonType1 {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+/* LAPTOP - 1024px*/ 
+@include main.breakpoint(smashLaptop) {
+  footer {
+    padding: 50px 0 30px 0;
+
+    & .container {
+      & .left {
+        width: 66%;
+
+        & .item {
+          width: 50%;
+
+          &:nth-child(3) {
+            display: none;
+          }
+        }
+      }
+
+      & .right {
+        width: 33%;
+      }
+    }
+  
+    & .developer {
+      margin-top: 30px;
+    }
+  }
+  
+}
+
+/* TABLET - 600px*/ 
+@include main.breakpoint(smashTablet) {
+  footer {
+    padding: 30px 0;
+
+    & .container {
+      flex-wrap: wrap;
+
+      & .left {
+        width: 100%;
+        flex-wrap: wrap;
+        gap:25px 0;
+
+        & .item {
+          width: 100%;
+        }
+      }
+
+      & .right {
+        width: 100%;
+
+        & ul {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+  
+}
